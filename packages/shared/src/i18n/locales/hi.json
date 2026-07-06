@@ -1,0 +1,21 @@
+{
+  "common": {
+    "yes": "हाँ", "no": "नहीं", "cancel": "रद्द करें", "confirm": "पुष्टि करें",
+    "loading": "लोड हो रहा है...", "error": "एक त्रुटि हुई", "success": "सफल",
+    "save": "सहेजें", "delete": "हटाएं", "edit": "संपादित करें", "create": "बनाएं",
+    "search": "खोजें", "noResults": "कोई परिणाम नहीं मिला"
+  },
+  "commands": {
+    "ping": { "description": "बॉट की प्रतिक्रिया समय जांचें", "response": "पोंग!" },
+    "info": { "description": "बॉट की जानकारी देखें" },
+    "ban": { "description": "सदस्य को प्रतिबंधित करें", "success": "{user} प्रतिबंधित किया गया", "error": "{user} को प्रतिबंधित करने में विफल" },
+    "kick": { "description": "सदस्य को निकालें", "success": "{user} को निकाला गया", "error": "{user} को निकालने में विफल" },
+    "purge": { "description": "एक साथ कई संदेश हटाएं", "success": "{count} संदेश हटाए गए", "error": "संदेश हटाने में विफल" }
+  },
+  "moderation": { "reason": "कारण", "moderator": "मॉडरेटर", "noReason": "कोई कारण नहीं दिया गया" },
+  "errors": { "permission": "आपके पास अनुमति नहीं है", "cooldown": "कृपया {seconds} सेकंड प्रतीक्षा करें", "notFound": "{resource} नहीं मिला" },
+  "tickets": { "created": "टिकट बनाया गया: {channel}", "closed": "{user} द्वारा टिकट बंद किया गया", "claimed": "{user} द्वारा टिकट लिया गया" },
+  "economy": { "wallet": "बटुआ", "bank": "बैंक", "balance": "शेष: ${amount}", "insufficientFunds": "अपर्याप्त धनराशि" },
+  "levels": { "levelUp": "बधाई हो {user}! आप लेवल {level} पर पहुंच गए!", "xpGained": "+{amount} XP" },
+  "music": { "nowPlaying": "अब बज रहा है: {title}", "addedToQueue": "कतार में जोड़ा गया: {title}", "notInVoice": "आपको वॉइस चैनल में होना चाहिए" }
+}

@@ -1,0 +1,21 @@
+{
+  "common": {
+    "yes": "はい", "no": "いいえ", "cancel": "キャンセル", "confirm": "確認",
+    "loading": "読み込み中...", "error": "エラーが発生しました", "success": "成功",
+    "save": "保存", "delete": "削除", "edit": "編集", "create": "作成",
+    "search": "検索", "noResults": "結果が見つかりません"
+  },
+  "commands": {
+    "ping": { "description": "ボットの応答時間を確認", "response": "ポン！" },
+    "info": { "description": "ボット情報を表示" },
+    "ban": { "description": "メンバーをBAN", "success": "{user} をBANしました", "error": "{user} のBANに失敗" },
+    "kick": { "description": "メンバーをキック", "success": "{user} をキックしました", "error": "{user} のキックに失敗" },
+    "purge": { "description": "メッセージを一括削除", "success": "{count} 件のメッセージを削除", "error": "削除に失敗" }
+  },
+  "moderation": { "reason": "理由", "moderator": "モデレーター", "noReason": "理由なし" },
+  "errors": { "permission": "権限がありません", "cooldown": "あと{seconds}秒お待ちください", "notFound": "{resource} が見つかりません" },
+  "tickets": { "created": "チケットを作成: {channel}", "closed": "{user} がチケットを閉じました", "claimed": "{user} がチケットを対応中" },
+  "economy": { "wallet": "ウォレット", "bank": "銀行", "balance": "残高: ${amount}", "insufficientFunds": "残高不足" },
+  "levels": { "levelUp": "おめでとう {user}! レベル {level} に到達！", "xpGained": "+{amount} XP" },
+  "music": { "nowPlaying": "再生中: {title}", "addedToQueue": "キューに追加: {title}", "notInVoice": "ボイスチャンネルに入室してください" }
+}

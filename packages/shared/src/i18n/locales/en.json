@@ -1,0 +1,86 @@
+{
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "search": "Search",
+    "noResults": "No results found"
+  },
+  "commands": {
+    "ping": {
+      "description": "Check the bot response time",
+      "response": "Pong!"
+    },
+    "info": {
+      "description": "View bot information"
+    },
+    "ban": {
+      "description": "Ban a member from the server",
+      "success": "{user} has been banned",
+      "error": "Failed to ban {user}"
+    },
+    "kick": {
+      "description": "Kick a member from the server",
+      "success": "{user} has been kicked",
+      "error": "Failed to kick {user}"
+    },
+    "purge": {
+      "description": "Delete multiple messages at once",
+      "success": "Deleted {count} messages",
+      "error": "Failed to delete messages"
+    }
+  },
+  "moderation": {
+    "reason": "Reason",
+    "moderator": "Moderator",
+    "noReason": "No reason provided",
+    "caseCreated": "Case #{id} created",
+    "warned": "{user} has been warned",
+    "timeout": "{user} has been timed out"
+  },
+  "errors": {
+    "permission": "You don't have permission to use this command",
+    "cooldown": "Please wait {seconds} seconds before using this command again",
+    "notFound": "{resource} not found",
+    "invalidInput": "Invalid input provided"
+  },
+  "tickets": {
+    "created": "Ticket created: {channel}",
+    "closed": "Ticket closed by {user}",
+    "claimed": "Ticket claimed by {user}",
+    "panelTitle": "Create a Ticket",
+    "panelDescription": "Click the button below to create a ticket"
+  },
+  "economy": {
+    "wallet": "Wallet",
+    "bank": "Bank",
+    "balance": "Balance: ${amount}",
+    "transferred": "Transferred ${amount} to {user}",
+    "insufficientFunds": "Insufficient funds"
+  },
+  "levels": {
+    "levelUp": "Congratulations {user}! You reached level {level}!",
+    "xpGained": "+{amount} XP",
+    "rank": "Rank"
+  },
+  "music": {
+    "nowPlaying": "Now Playing: {title}",
+    "addedToQueue": "Added to queue: {title}",
+    "queueEmpty": "The queue is empty",
+    "notInVoice": "You must be in a voice channel"
+  },
+  "portfolio": {
+    "created": "Portfolio created!",
+    "published": "Portfolio published at {url}",
+    "updated": "Portfolio updated",
+    "deleted": "Portfolio deleted"
+  }
+}

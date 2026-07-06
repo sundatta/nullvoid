@@ -1,0 +1,38 @@
+FROM node:20-alpine AS base
+
+FROM base AS deps
+RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
+WORKDIR /app
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+COPY apps/bot/package.json apps/bot/
+COPY packages/ packages/
+RUN pnpm install --frozen-lockfile
+
+FROM base AS builder
+RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/packages ./packages
+COPY --from=deps /app/apps ./apps
+COPY tsconfig.base.json ./
+RUN pnpm --filter @nullvoid/bot run build
+RUN pnpm --filter @nullvoid/database run build
+RUN pnpm --filter @nullvoid/shared run build
+RUN pnpm --filter @nullvoid/logger run build
+RUN pnpm --filter @nullvoid/utils run build
+RUN pnpm --filter @nullvoid/config run build
+RUN pnpm --filter @nullvoid/types run build
+RUN pnpm prune --prod
+
+FROM base AS runner
+RUN corepack enable && corepack prepare pnpm@9.15.4 --activate
+WORKDIR /app
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nullvoid
+COPY --from=builder /app/apps/bot/dist ./apps/bot/dist
+COPY --from=builder /app/packages ./packages
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./
+USER nullvoid
+ENV NODE_ENV=production
+CMD ["node", "apps/bot/dist/index.js"]

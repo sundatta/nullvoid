@@ -1,0 +1,21 @@
+{
+  "common": {
+    "yes": "Ja", "no": "Nein", "cancel": "Abbrechen", "confirm": "Bestätigen",
+    "loading": "Lädt...", "error": "Ein Fehler ist aufgetreten", "success": "Erfolg",
+    "save": "Speichern", "delete": "Löschen", "edit": "Bearbeiten", "create": "Erstellen",
+    "search": "Suchen", "noResults": "Keine Ergebnisse"
+  },
+  "commands": {
+    "ping": { "description": "Antwortzeit des Bots prüfen", "response": "Pong!" },
+    "info": { "description": "Bot-Informationen anzeigen" },
+    "ban": { "description": "Mitglied bannen", "success": "{user} wurde gebannt", "error": "Fehler beim Bannen von {user}" },
+    "kick": { "description": "Mitglied kicken", "success": "{user} wurde gekickt", "error": "Fehler beim Kicken von {user}" },
+    "purge": { "description": "Nachrichten löschen", "success": "{count} Nachrichten gelöscht", "error": "Fehler beim Löschen" }
+  },
+  "moderation": { "reason": "Grund", "moderator": "Moderator", "noReason": "Kein Grund angegeben" },
+  "errors": { "permission": "Keine Berechtigung", "cooldown": "Bitte {seconds}s warten", "notFound": "{resource} nicht gefunden" },
+  "tickets": { "created": "Ticket erstellt: {channel}", "closed": "Ticket geschlossen von {user}", "claimed": "Ticket übernommen von {user}" },
+  "economy": { "wallet": "Geldbörse", "bank": "Bank", "balance": "Kontostand: ${amount}", "insufficientFunds": "Nicht genügend Guthaben" },
+  "levels": { "levelUp": "Glückwunsch {user}! Level {level} erreicht!", "xpGained": "+{amount} XP" },
+  "music": { "nowPlaying": "Jetzt spielt: {title}", "addedToQueue": "Zur Warteschlange hinzugefügt: {title}", "notInVoice": "Du musst in einem Sprachkanal sein" }
+}

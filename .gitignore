@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.next/
+*.tsbuildinfo
+.env.local
+.env.*.local
+*.log
+coverage/
+.turbo/
+.cache/
+prisma/*.db
+prisma/*.db-journal
+docker/postgres-data/
+docker/redis-data/
+*.pem
+.DS_Store
+Thumbs.db
+
+# Keep .env tracked if it's the local template (we committed it)
+# Add your actual .env to gitignore
+.env

@@ -1,0 +1,35 @@
+{
+  "name": "nullvoid",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise-Grade Discord Bot — AI, Moderation, Tickets, Economy, Leveling, Music & Dashboard",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r --parallel run dev",
+    "dev:bot": "pnpm --filter @nullvoid/bot dev",
+    "dev:api": "pnpm --filter @nullvoid/api dev",
+    "dev:dash": "pnpm --filter @nullvoid/dashboard dev",
+    "start:local": "powershell -ExecutionPolicy Bypass -File scripts/start-local.ps1",
+    "lint": "pnpm -r run lint",
+    "lint:fix": "pnpm -r run lint:fix",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,yml,yaml,md}\"",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "test:e2e": "pnpm -r run test:e2e",
+    "clean": "pnpm -r run clean",
+    "docker:build": "docker-compose -f docker/docker-compose.yml build",
+    "docker:up": "docker-compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker-compose -f docker/docker-compose.yml down",
+    "prisma:generate": "pnpm --filter @nullvoid/database run prisma:generate",
+    "prisma:push": "pnpm --filter @nullvoid/database run prisma:push",
+    "prisma:migrate": "pnpm --filter @nullvoid/database run prisma:migrate",
+    "prisma:studio": "pnpm --filter @nullvoid/database run prisma:studio",
+    "postinstall": "node -e \"try{require('husky').install()}catch(e){}\""
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.4"
+}

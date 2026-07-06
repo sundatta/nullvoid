@@ -1,0 +1,55 @@
+{
+  "common": {
+    "yes": "Sí",
+    "no": "No",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "success": "Éxito",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "create": "Crear",
+    "search": "Buscar",
+    "noResults": "Sin resultados"
+  },
+  "commands": {
+    "ping": { "description": "Verificar el tiempo de respuesta del bot", "response": "¡Pong!" },
+    "info": { "description": "Ver información del bot" },
+    "ban": { "description": "Expulsar a un miembro del servidor", "success": "{user} ha sido expulsado", "error": "Error al expulsar a {user}" },
+    "kick": { "description": "Expulsar a un miembro del servidor", "success": "{user} ha sido expulsado", "error": "Error al expulsar a {user}" },
+    "purge": { "description": "Eliminar varios mensajes a la vez", "success": "{count} mensajes eliminados", "error": "Error al eliminar mensajes" }
+  },
+  "moderation": {
+    "reason": "Razón",
+    "moderator": "Moderador",
+    "noReason": "Sin razón proporcionada",
+    "caseCreated": "Caso #{id} creado"
+  },
+  "errors": {
+    "permission": "No tienes permiso para usar este comando",
+    "cooldown": "Espera {seconds} segundos antes de usar este comando nuevamente",
+    "notFound": "{resource} no encontrado"
+  },
+  "tickets": {
+    "created": "Ticket creado: {channel}",
+    "closed": "Ticket cerrado por {user}",
+    "claimed": "Ticket reclamado por {user}"
+  },
+  "economy": {
+    "wallet": "Billetera",
+    "bank": "Banco",
+    "balance": "Saldo: ${amount}",
+    "insufficientFunds": "Fondos insuficientes"
+  },
+  "levels": {
+    "levelUp": "¡Felicidades {user}! ¡Alcanzaste el nivel {level}!",
+    "xpGained": "+{amount} XP"
+  },
+  "music": {
+    "nowPlaying": "Reproduciendo: {title}",
+    "addedToQueue": "Añadido a la cola: {title}",
+    "notInVoice": "Debes estar en un canal de voz"
+  }
+}
