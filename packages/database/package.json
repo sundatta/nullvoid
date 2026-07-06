@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "prisma": "^5.22.0",
-    "@types/node": "^20.17.6",
+    "@types/node": "^26.1.0",
     "eslint": "^8.57.1",
     "prettier": "^3.4.2",
     "rimraf": "^6.0.1",
