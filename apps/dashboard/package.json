@@ -21,7 +21,7 @@
     "@nullvoid/shared": "workspace:*",
     "@nullvoid/types": "workspace:*",
     "@nullvoid/utils": "workspace:*",
-    "next": "^14.2.18",
+    "next": "^16.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zustand": "^5.0.1",
